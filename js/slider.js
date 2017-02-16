@@ -4,9 +4,6 @@
 *
 */
 
-//put image in div
-var slide = document.getElementById('slide');
-
 var arraySlide = [
 	'img0.jpg',
 	'img1.jpg',
@@ -15,8 +12,7 @@ var arraySlide = [
 	'img4.jpg'
 ];
 
-for(i = 0; i < 4; i++)
+for(var i = 0; i < 4; i++)
 {
-	console.log(arraySlide[i]);
-	document.getElementById('slide').src = 'img/' + arraySlide[i];
+	document.getElementsByClassName('slide').src = 'img/' + arraySlide[i];
 }
